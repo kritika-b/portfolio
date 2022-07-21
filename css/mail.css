@@ -1,0 +1,232 @@
+a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+a.home:hover {
+  color: #6c63ff;
+}
+a.home::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+a.home:hover::before {
+  transform: scaleX(1);
+}
+
+a.mailme::before {
+  content: "";
+  position: absolute;
+  display: block;
+  margin: 0px -4px;
+  width: 114%;
+  height: 18px;
+  bottom: 0;
+  left: 0;
+  /* background-color: rgba(162, 136, 166, 0.5); */
+}
+
+a.about:hover {
+  color: #6c63ff;
+}
+a.about::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+a.about:hover::before {
+  transform: scaleX(1);
+}
+.nav {
+  display: flex;
+  position: absolute;
+  top: 5%;
+  left: 70.5%;
+}
+.nav a {
+  font-family: "Inter", sans-serif;
+  color: #000000;
+  margin: 0px 10px;
+}
+
+a.mailme {
+  text-decoration: underline;
+  color: #a288a6;
+}
+
+.bookmark {
+  background-image: url("../img/bookmark.svg");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  height: 445px;
+  width: 196px;
+  background-size: 450px;
+  background-position-x: 51%;
+  background-position-y: 96%;
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.6));
+}
+.getInTouch {
+  position: absolute;
+  top: 24%;
+  left: 30%;
+}
+.mailImage {
+  background-image: url("../img/mailbox.svg");
+  background-repeat: no-repeat;
+  height: 294px;
+  width: 450px;
+  background-size: 299px;
+  background-position-x: 50%;
+  background-position-y: 101%;
+  position: absolute;
+  top: 13%;
+  left: 131%;
+}
+.field ::placeholder {
+  /* background-color: rgba(217, 217, 217, 0.9); */
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+input {
+  width: 200px;
+  height: 35px;
+  border-radius: 12px;
+  margin: 0px 0px 20px 0px;
+  background-color: rgba(217, 217, 217, 0.45);
+  /* outline: none;
+  border: none; */
+}
+input[type="text"] {
+  background-image: url("../img/user.svg");
+  background-position: 1px 1px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  background-size: 16px;
+  background-position-x: 4%;
+  background-position-y: 50%;
+  outline: none;
+  border: none;
+}
+input[type="email"] {
+  background-image: url("../img/mail.svg");
+  background-position: 1px 1px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  background-size: 16px;
+  background-position-x: 4%;
+  background-position-y: 50%;
+  outline: none;
+  border: none;
+}
+
+input:focus {
+  background-color: rgba(146, 141, 245, 0.25);
+}
+textarea {
+  width: 200px;
+  height: 85px;
+  border-radius: 12px;
+  margin: 0px 0px 20px 0px;
+  background-color: rgba(217, 217, 217, 0.451);
+  outline: none;
+  background-image: url("../img/message.svg");
+  background-position: 1px 1px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  background-size: 16px;
+  background-position-x: 4%;
+  background-position-y: 5%;
+  border: none;
+}
+textarea:focus {
+  background-color: rgba(146, 141, 245, 0.3);
+}
+.txtGet {
+  font-size: 38px;
+  margin-bottom: 26px;
+  margin-top: -7px;
+  margin-right: 0px;
+  margin-left: 25px;
+  padding-left: 0px;
+}
+.verticalLine {
+  border-left: 1px solid black;
+  height: 350px;
+  position: absolute;
+  left: 126%;
+  top: -2%;
+}
+.circle {
+  background-image: url("../img/ellipse.svg");
+  background-repeat: no-repeat;
+  height: 274px;
+  width: 349px;
+  background-size: 281px;
+  background-position-x: 50%;
+  background-position-y: 101%;
+  position: absolute;
+  top: -18%;
+  left: 163%;
+}
+.btn {
+  background-color: rgba(108, 99, 255, 0.8);
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  /* font-weight: bold; */
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 3px 70px;
+}
+.connect {
+  background-image: linear-gradient(#a288a6, #ffffffea);
+  /* background: rgba(134, 97, 137, 0.8); */
+  color: rgba(0, 0, 0, 0.95);
+  display: inline-block;
+  padding: 7px 5px 7px 14px;
+  border-radius: 50px;
+  margin-left: 74%;
+  margin-top: 7%;
+}
+.insta {
+  background: url("../img/instagram.png") no-repeat;
+  background-size: 16px;
+  padding: 0 10px 0 16px;
+}
+.twitter {
+  background: url("../img/twitter.png") no-repeat;
+  background-size: 16px;
+  padding: 0 10px 0 16px;
+}
+.linkedin {
+  background: url("../img/linkedin.png") no-repeat;
+  background-size: 16px;
+  padding: 0 10px 0 16px;
+}
+.giveSpace {
+  padding: 0px 12px 0px 0px;
+}
+.mailMe {
+  position: absolute;
+  left: 28%;
+  top: 24%;
+}
