@@ -26,8 +26,6 @@ a.about::before {
   height: 18px;
   bottom: 0;
   left: 0;
-  /* background-color: rgba(162, 136, 166, 0.4); */
-  /* text-decoration: underline solid #a288a6; */
 }
 
 a.mailme:hover {
@@ -117,7 +115,7 @@ body {
 
 .connect {
   background-image: linear-gradient(#a288a6, #ffffffea);
-  /* background: rgba(134, 97, 137, 0.8); */
+
   color: rgba(0, 0, 0, 0.95);
   display: inline-block;
   padding: 7px 6px 7px 16px;
@@ -153,7 +151,7 @@ body {
   width: 638px;
   position: absolute;
   top: 19%;
-  left: 31%;
+  left: 29%;
 }
 .overlay-image {
   position: absolute;
@@ -178,9 +176,6 @@ body {
   width: 500px;
   height: 100px;
   opacity: 0.7;
-  /* background: rgba(0, 0, 0, 0.5); */
-  /* #beb1d9
-  #724461 */
 }
 .carousel-indicators {
   bottom: -8px;
